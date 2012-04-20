@@ -1,5 +1,9 @@
 @import "bootstrap";
 
+/* mixins, variables, etc. */
+
+$grayMediumLight: #eaeaea;
+
 /* universal */
 
 html {
@@ -21,7 +25,7 @@ textarea {
 .center {
   text-align: center;
   h1 {
-   margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 }
 
@@ -52,6 +56,7 @@ p {
   line-height: 1.7em;
 }
 
+
 /* header */
 
 #logo {
@@ -75,16 +80,16 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid $grayMediumLight;
   color: $grayLight;
   a {
-    color: #555;
+    color: $gray;
     &:hover { 
-      color: #222;
+      color: $grayDarker;
     }
-  }
-  small {
-    float: left;
+  }  
+  small { 
+    float: left; 
   }
   ul {
     float: right;
@@ -93,5 +98,5 @@ footer {
       float: left;
       margin-left: 10px;
     }
-  }  
+  }
 }
